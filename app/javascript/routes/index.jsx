@@ -5,7 +5,7 @@ import Home from "../components/Home";
 export default (
 	<Router>
 		<Routes>
-			<Route path="/" exact component={Home} />
+			<Route path="/" element={<Home />} />
 		</Routes>
 	</Router>
 );

@@ -1,10 +1,24 @@
-<p style="color: green"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
-<%= render @beer %>
+<p>
+  <strong>Brand:</strong>
+  <%= @beer.brand %>
+</p>
 
-<div>
-  <%= link_to "Edit this beer", edit_beer_path(@beer) %> |
-  <%= link_to "Back to beers", beers_path %>
+<p>
+  <strong>Style:</strong>
+  <%= @beer.style %>
+</p>
 
-  <%= button_to "Destroy this beer", @beer, method: :delete %>
-</div>
+<p>
+  <strong>Country:</strong>
+  <%= @beer.country %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @beer.quantity %>
+</p>
+
+<%= link_to 'Edit', edit_beer_path(@beer) %> |
+<%= link_to 'Back', beers_path %>
